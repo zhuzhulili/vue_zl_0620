@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1500408_jigom6q1vso.css">
     <title>zl_0620z</title>
   </head>
   <body>
@@ -13,5 +15,23 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <!-- <script>
+      function remRefresh() {
+        let clientWidth = document.documentElement.clientWidth
+        let rem = clientWidth/10
+        document.documentElement.style.fontSize=rem+'px'
+        document.body.style.fontSize='12px'    
+      }
+       window.addEventListener('pageshow',()=>{
+        remRefresh()
+       })
+       let timeoutId
+       window.addEventListener('resize',()=>{
+        timeoutId&&clearTimeout(timeoutId)
+          timeoutId=setTimeout(()=>{
+            remRefresh()
+          })
+       }) -->
+       <!-- </script> -->
   </body>
 </html>
